@@ -1,9 +1,14 @@
 import React from 'react';
-
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+
+
+import { initialState, totalReducer }  from "./reducers/totalReducer";
+
+
+
 
 const App = () => {
   const state = {
@@ -28,8 +33,10 @@ const App = () => {
   };
 
   const buyItem = item => {
-    // dipsatch an action here to add an item
+  // dispatch({type: 'ADD_FEATURE', payload: newFeature})
   };
+    // dipsatch an action here to add an item
+    // 
 
   return (
     <div className="boxes">
